@@ -19,15 +19,15 @@ class UTextBlock;
 UCLASS()
 class LISTVIEWEXAMPLE_API UFriendEntryWidget : public UUserWidget, public IUserObjectListEntry
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 public:
 
-	UFUNCTION(BlueprintCallable)
-	void InitializeWidgetWithData(UObject* ListItemObject);
-	
+    UFUNCTION(BlueprintCallable)
+    void InitializeWidgetWithData(UObject* ListItemObject);
+
     UPROPERTY(meta = (BindWidget))
     UTextBlock* UsernameText;
-	
+
     UPROPERTY(meta = (BindWidget))
     UBorder* ConnectionStatusIndicator;
 };

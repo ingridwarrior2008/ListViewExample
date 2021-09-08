@@ -12,7 +12,7 @@ void UFriendEntryWidget::InitializeWidgetWithData(UObject* ListItemObject)
     {
         return;
     }
-    
+
     UFriendsDataObject* FriendsDataObject = Cast<UFriendsDataObject>(ListItemObject);
 
     if (!IsValid(FriendsDataObject))

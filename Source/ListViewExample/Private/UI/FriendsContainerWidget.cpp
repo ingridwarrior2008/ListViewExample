@@ -86,7 +86,7 @@ void UFriendsContainerWidget::OnToggleConnectedList()
 {
     ToggleListView(ConnectedListView);
 }
-	
+
 void UFriendsContainerWidget::OnToggleDisconnectedList()
 {
     ToggleListView(DisconnectedListView);
@@ -99,7 +99,7 @@ void UFriendsContainerWidget::ToggleListView(UListView* ListView)
         UE_LOG(LogTemp, Warning, TEXT("Not valid list reference"));
         return;
     }
-    
+
     const bool bIsCollapsed = ListView->Visibility == ESlateVisibility::Collapsed;
 
     if (bIsCollapsed)
