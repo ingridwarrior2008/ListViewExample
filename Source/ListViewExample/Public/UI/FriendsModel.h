@@ -13,10 +13,10 @@ USTRUCT(BlueprintType)
 struct FFriendsModelStruct : public FTableRowBase
 {
     GENERATED_BODY()
-    
+
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Friends")
     FString Username;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Friends")
-    uint8 bIsConnected : 1 ;
+    uint8 bIsConnected : 1;
 };

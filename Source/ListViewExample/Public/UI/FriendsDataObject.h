@@ -12,15 +12,15 @@
 UCLASS()
 class LISTVIEWEXAMPLE_API UFriendsDataObject : public UObject
 {
-	GENERATED_BODY()
-	
+    GENERATED_BODY()
+
 public:
 
-	static UFriendsDataObject* InitializeObject(UObject* Owner, const FText Username, const FLinearColor Color);
+    static UFriendsDataObject* InitializeObject(UObject* Owner, const FText Username, const FLinearColor Color);
 
     UPROPERTY(BlueprintReadOnly, Category = FriendDataObject)
     FText FriendsUsername;
 
-	UPROPERTY(BlueprintReadOnly, Category = FriendDataObject)
-	FLinearColor ColorIndicator;
+    UPROPERTY(BlueprintReadOnly, Category = FriendDataObject)
+    FLinearColor ColorIndicator;
 };
